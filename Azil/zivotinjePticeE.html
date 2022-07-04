@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Animals birds</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">	
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<link rel="stylesheet" href="mojStil.css" media="screen">
+
+</head>
+<body>
+    <!-- section header start -->
+	<div class="container-fluid">
+		<div class="row" id="zaglavlje">
+			<div class="col-md-4">
+				<div><a href="index.html"><img src="images/logo.png"></a></div>
+			</div>
+            <div class="col-md-8">
+				<h1 id="naziv">Petimons</h1>
+			</div>
+            <div class="col-md-12">
+				<p id="breadcrumbs">zivotinjePticeE</p>
+			</div>
+        </div>
+    </div>
+
+    <!-- section header end -->
+
+    <!-- section menu start -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 menidiv">
+                <ul class="meni">
+                    <li class="meniItem"><a class="meniLink" href="pocetnaE.html">Home</a></li>
+                    <li class="meniItem"><a class="meniLink" href="ZivotinjeE.html">Animals</a></li>
+                    <li class="meniItem"><a class="meniLink" href="oglasiE.html">Lost pets</a></li>
+                    <li class="meniItem"><a class="meniLink" href="dodajOglasE.html">Ad</a></li>
+                    <li class="meniItem"><a class="meniLink" href="mojNalogE.html">My account</a></li>
+                    <li class="meniItem"><a class="meniLink" href="oNamaE.html">About</a></li>
+                    <li class="meniItem"><a class="meniLink" href="pocetna.html">Srpski</a></li>
+                    <li class="meniItem" style="float: right;"><a class="meniLink" onclick="logout()">Logout</a></li>
+                              
+                </ul>            
+            </div>
+        </div>
+    </div>
+
+    <!-- section menu end -->
+
+
+
+	<!-- section gallery start -->
+    <div class="gallery_main layout_padding">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm-12">
+    				<h1 class="about_taital"  style="text-align: left;"><strong><span style="color: #f7941d;">Choose a</span> pet</strong></h1>
+    			</div>
+    		</div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="radio" id="nameAsc" name="sortOpcija">
+                    <label for="nameAsc">Names asc</label>
+                    <input type="radio" id="nameDsc" name="sortOpcija">
+                    <label for="nameAsc">Names dsc</label>
+                    <input type="radio" id="yearAsc" name="sortOpcija">
+                    <label for="nameAsc">Years asc</label>
+                    <input type="radio" id="yearDsc" name="sortOpcija">
+                    <label for="nameAsc">Years dsc</label>
+                    <button id="sortiranje">Sort</button>
+    			</div>
+    		</div>
+            <div class="row">
+    			<div class="col-sm-12">
+                    <label for="imeP">Name</label>
+                    <input type="text" name="imeP" id="imeP">
+                    <label for="godineP">Years</label>
+                    <input type="text" name="godineP" id="godineP">
+                    <button id="pretraga">Search</button>
+                    <p id="vrsta">ptice</p>
+                    <p id="neuspesnaPretraga">We don't have a pet you search for.</p>
+    			</div>
+    		</div>
+    		<div class="gallery_images">
+    			<div class="row zivSort">
+    				<div class="col-sm-6">
+						<div class="gallery_blog">
+                            <a id="pera" href="peraE.html"><img src="images/pera5.jpg" style="max-width: 100%; height: 300px; width: 100%;"></a>
+                        <div class="overlay">
+                            <div class="text"><p class="imena">Pera</p></div>
+                            <div class="text"><p class="godine">6</p></div>
+                        </div>
+					    </div>
+    				</div>
+                    <div class="col-sm-6">
+						<ul>
+                            <li class="infoZivotinja">My name is: Pera</li>
+                            <li class="infoZivotinja">I am 6 years old</li>
+                        </ul>
+    				</div>
+                </div>
+
+                <div class="row zivSort">
+    				<div class="col-sm-6">
+						<div class="gallery_blog">
+                            <a id="zucko" href="zuckoE.html"><img src="images/zucko1.jpg" style="max-width: 100%; height: 300px; width: 100%;"></a>
+                        <div class="overlay">
+                            <div class="text"><p class="imena">Zucko</p></div>
+                            <div class="text"><p class="godine">5</p></div>
+                        </div>
+					    </div>
+    				</div>
+                    <div class="col-sm-6">
+						<ul>
+                            <li class="infoZivotinja">My name is: Zucko</li>
+                            <li class="infoZivotinja">I am 5 years old</li>
+                        </ul>
+    				</div>
+                </div>
+
+                <div class="row zivSort">
+    				<div class="col-sm-6">
+						<div class="gallery_blog">
+                            <a id="paunovic" href="fazanovicE.html"><img src="images/paunovic3.jpg" style="max-width: 100%; height: 300px; width: 100%;"></a>
+                        <div class="overlay">
+                            <div class="text"><p class="imena">Paunovic</p></div>
+                            <div class="text"><p class="godine">9</p></div>
+                        </div>
+					    </div>
+    				</div>
+                    <div class="col-sm-6">
+						<ul>
+                            <li class="infoZivotinja">My name is: Paunovic</li>
+                            <li class="infoZivotinja">I am 9 years old</li>
+                        </ul>
+    				</div>
+                </div>
+    				
+    		</div>
+    	</div>
+    </div>
+    
+
+	<!-- section gallery end -->
+
+
+
+	<!-- section footer start -->
+    <div class="section_footer">
+    	<div class="container">
+            <div class="row">
+	            <div class="copyright">Copyright 2022, Nemanja Krivokapic, Mihailo Milenkovic, 
+                    Department of Software Engineering, Faculty of Electrical Engineering, Belgrade
+                </div>
+	        </div>
+    	</div>
+    </div>
+	<!-- section footer end -->
+
+
+
+
+
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script>
+      $(document).ready(function(){
+      $(".fancybox").fancybox({
+         openEffect: "none",
+         closeEffect: "none"
+         });
+         
+         $(".zoom").hover(function(){
+         
+         $(this).addClass('transition');
+         }, function(){
+         
+         $(this).removeClass('transition');
+         });
+         });
+         </script> 
+
+
+   <script>
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+   document.getElementById("myNav").style.width = "0%";
+   }
+</script>
+<script src="skript.js"></script>
+
+     
+</body>
+</html>
